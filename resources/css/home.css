@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.clf:after,
+.clf:before {
+    content: '';
+    display: table;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+
+body.dark-mode .welcome
+{
+    color: black;
+}
+
+
+main {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.welcome {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+main .overview {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 96%;
+    gap: 10px;
+    margin-left: 0;
+    margin-top: 20px;
+}
+
+.overview .card {
+    display: flex;
+    flex-direction: row;
+    width: 24%;
+    height: 110px;
+}
+
+
+.card h3 ,
+.card p,
+.card h4 ,
+.card i{
+    color: rgb(255, 255, 255);
+}
+
+
+.card h3 {
+    font-weight: bold;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.card h4 {
+    font-size: 0.80rem;
+    text-wrap: nowrap;
+    text-transform: uppercase;
+    position: relative;
+    top: 10px;
+}
+
+.card p {
+    font-size: 12px;
+    position: relative;
+    top: 10px;
+}
+
+.card .left {
+    width: 90%;
+    padding: 14px;
+}
+
+.card .left h3 {
+    font-size: 1.4rem;
+}
+
+.card .right {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overview .card .right i {
+    font-size: 2rem;
+}
+
+/* Card Background Colors */
+.first .left { background-color: #2fcd71; }
+.first .right { background-color: #32801b; }
+.second .left { background-color: #034ace; }
+.second .right { background-color: rgb(25, 101, 126); }
+.third .left { background-color: #e97100; }
+.third .right { background-color: #af6016; }
+.fourth .left { background-color: #c90000; }
+.fourth .right { background-color: #c93535; }
+
+.division {
+    display: flex;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.leftStatistics,
+.rightStatistics {
+    box-shadow: rgb(212, 205, 205) 0px 0px 5px 0px;
+}
+body.light-mode .leftStatistics,
+body.light-mode .rightStatistics 
+{
+    background-color: #333; 
+    color: white;
+}
+
+body.dark-mode .leftStatistics{
+    background-color: white;
+}
+
+body.light-mode .leftStatistics .header,
+body.light-mode .leftStatistics .header .rightS,
+body.light-mode .leftStatistics .income,
+body.light-mode .leftStatistics .sales,
+body.light-mode .leftStatistics .income div,
+body.light-mode .leftStatistics .sales div,
+body.light-mode .leftStatistics .income .text-muted,
+body.light-mode .leftStatistics .sales .text-muted,
+body.light-mode .leftStatistics .income .h2,
+body.light-mode .rightStatistics
+body.light-mode .rightStatistics h5{
+    color: white !important; /* Using !important temporarily to ensure it works */
+}
+
+
+
+/* Ensure text color changes in other relevant areas */
+body.light-mode .leftStatistics .header .text-muted {
+    color: rgba(255, 255, 255, 0.7); /* Light muted text color */
+}
+
+
+
+.leftStatistics {
+    width: 54%;
+    border: none;
+    margin: 0;
+    position: relative;
+    padding: 20px;
+    font-weight: 400;
+    height: 60vh;
+}
+
+.leftStatistics .header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftStatistics h2 {
+    font-weight: 300;
+    margin: 0;
+}
+
+.leftStatistics .header .rightS {
+    display: flex;
+    gap: 12px;
+}
+
+.leftStatistics .header .rightS p {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.leftStatistics .header .rightS div h3 {
+    font-size: 30px;
+    margin-top: -10px;
+}
+
+.leftStatistics .header .rightS div {
+    margin-top: 4px;
+}
+
+.leftStatistics hr {
+    transform: rotate(90deg);
+    margin-top: 20px;
+    height: 100%;
+}
+
+.leftStatistics .graph {
+    margin-top: 20px;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightStatistics {
+    width: 24%;
+    height: 60vh;
+    margin: 0;
+    position: relative;
+    right: -40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff; /* Light background */
+    padding: 20px;
+}
+
+.rightStatistics h5 {
+    font-weight: 300;
+    margin: 0;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.rightStatistics hr {
+    margin-top: 4px;
+}
+
+.rightStatistics .graph {
+    width: 100%;
+    height: 55%;
+    padding: 10px;
+}
+
+.rightStatistics .mostSelling {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: -35px;
+}
+
+.rightStatistics .mostSelling .product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid rgba(167, 160, 160, 0.575);
+    margin-top: -4px;
+}
+
+.rightStatistics .mostSelling .product h4 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.rightStatistics .mostSelling .product i {
+    font-size: 16px;
+}
+
+.rightS {
+    width: 50%;
+    padding-left: 20px;
+}
+
+main .bi-graph-up-arrow {
+    color: rgb(0, 255, 0);
+}
+
+main .bi-graph-down-arrow {
+    color: #9b0d00;
+}
+
+
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rightStatistics .graph {
+    width: 100%;
+    margin-top: -30px;
+    margin-left: 40px;
+}
+
+.content {
+    position: relative;
+    top: 0px;
+    margin-left: 100px;
+}
+
+:root {
+    --green: #2b8600;
+    --blue: #23b6e4;
+    --red: #e74c3c;
+    --orange: #23b6e4;
+}
+
+
+
+body.dark-mode .leftStatistics,
+body.dark-mode .rightStatistics {
+    color: #000000; 
+}
+
+
+
+.weekPercentage {
+    margin-left: 20px;
+}
